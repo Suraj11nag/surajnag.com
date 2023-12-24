@@ -103,6 +103,10 @@ footer {
     bottom: -2px; /* Adjust the distance from the text */
   }
 
+#writings a:hover::after {
+  border-bottom: 1px solid white; /* Adjust the color on hover as needed */
+}
+
   #projects li {
     margin-bottom: 15px; /* Adjust the margin-bottom for spacing between lines */
     font-size: 15px;
