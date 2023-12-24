@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: #ccc; /* Grayish text color */
+    font-family: 'Menlo', monospace;
+    margin-top: 150px;
+}
+
+header, section, footer {
+    margin: 20px 20px 20px 24em; /* Adjusted left margin */
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 33px;
+    font-family: 'Menlo', monospace;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 15px;
+}
+.line {
+    border-top: 1px solid #ccc;
+    width: 10mm;
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+  footer {
+    color: #ccc;
+  }
+  
+  /* Add this style for the links in the footer */
+  footer a {
+    color: #ccc;
+    text-decoration: none; /* Optional: Remove underline */
+  }
+  
+  /* Add this style for the links on hover (optional) */
+  footer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }  
+  /* Add this style for the links in the writings section */
+#writings a {
+    color: #ccc; /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Remove underline */
+  }
+  
+  /* Add this style for the links on hover (optional) */
+  #writings a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+  .social-icons a[href^="mailto"] i {
+    color: #fff; /* You can replace this with your desired color code for white */
+  }
+  
+  /* Change the color of the LinkedIn icon to white */
+  .social-icons a[href*="linkedin.com"] i {
+    color: #fff; /* You can replace this with your desired color code for white */
+  }
+  .social-icons a[href*="twitter.com"] i {
+    color: #fff; /* Replace with your desired color code for white */
+  }
+  
+  /* Change the color of the LinkedIn icon to white */
+  .social-icons a[href*="github.com"] i {
+    color: #fff; /* Replace with your desired color code for white */
+  }
