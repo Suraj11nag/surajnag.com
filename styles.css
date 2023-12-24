@@ -2,11 +2,12 @@ body {
     background-color: black;
     color: #ccc; /* Grayish text color */
     font-family: 'Menlo', monospace;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 header, section, footer {
-    margin: 20px 20px 20px 24em; /* Adjusted left margin */
+  margin: 20px auto; /* Centered with auto left and right margins */
+  max-width: 800px; /* Set your desired maximum width */
 }
 
 h1, h2 {
@@ -37,8 +38,8 @@ footer {
     font-size: 15px;
 }
 .line {
-    border-top: 1px solid #ccc;
-    width: 10mm;
+    border-top: 1px solid white;
+    width: 25mm;
     margin-top: 5px; /* Adjust the margin as needed */
   }
   footer {
@@ -59,12 +60,10 @@ footer {
 #writings a {
     color: #ccc; /* Adjust the color as needed */
     text-decoration: none; /* Optional: Remove underline */
+    text-decoration: underline; /* Add static underline to the links */
+    text-decoration-skip-ink: auto; /* Add space between text and underline */
   }
-  
-  /* Add this style for the links on hover (optional) */
-  #writings a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-  }
+
   .social-icons a[href^="mailto"] i {
     color: #fff; /* You can replace this with your desired color code for white */
   }
@@ -81,3 +80,51 @@ footer {
   .social-icons a[href*="github.com"] i {
     color: #fff; /* Replace with your desired color code for white */
   }
+  .social-icons a {
+    margin-right: 15px; /* Adjust the right margin to control the spacing between icons */
+  }
+  
+  /* Optional: Add margin to the last icon to avoid extra spacing after the last icon */
+  .social-icons a:last-child {
+    margin-right: 0;
+  }
+  #writings a {
+    color: #ccc; /* Adjust the color as needed */
+    text-decoration: none; /* Remove default underline */
+    position: relative;
+  }
+  
+  #writings a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    position: absolute;
+    bottom: -2px; /* Adjust the distance from the text */
+  }
+
+  #projects li {
+    margin-bottom: 15px; /* Adjust the margin-bottom for spacing between lines */
+    font-size: 15px;
+    line-height: 1.5; /* Adjust the line height for better spacing */
+    text-decoration-skip-ink: auto; /* Add space between text and underline */
+}
+
+#projects li a {
+  color: #ccc; /* Adjust the color as needed */
+  text-decoration: none; /* Remove default underline */
+  position: relative;
+}
+
+#projects li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+  position: absolute;
+  bottom: -2px; /* Adjust the distance from the text */
+}
+
+#projects li a:hover::after {
+  border-bottom: 1px solid white; /* Adjust the color on hover as needed */
+}
