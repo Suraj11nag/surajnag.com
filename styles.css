@@ -135,7 +135,3 @@ footer {
 #projects li a:hover::after {
   border-bottom: 1px solid white; /* Adjust the color on hover as needed */
 }
-body {
-  background-color: #1a1a1a; /* Dark background color */
-  color: #e0e0e0; /* Light text color */
-}
