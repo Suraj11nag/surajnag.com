@@ -2,12 +2,12 @@ body {
     background-color: black;
     color: #ccc; /* Grayish text color */
     font-family: 'Menlo', monospace;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 header, section, footer {
   margin: 20px auto; /* Centered with auto left and right margins */
-  max-width: 800px; /* Set your desired maximum width */
+  max-width: 650px; /* Set your desired maximum width */
 }
 
 h1, h2 {
@@ -80,6 +80,9 @@ footer {
   .social-icons a[href*="github.com"] i {
     color: #fff; /* Replace with your desired color code for white */
   }
+  .social-icons a[href*="medium.com"] i {
+    color: #fff; /* Replace with your desired color code for white */
+}
   .social-icons a {
     margin-right: 15px; /* Adjust the right margin to control the spacing between icons */
   }
