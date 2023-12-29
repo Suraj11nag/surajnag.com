@@ -95,6 +95,7 @@ footer {
     color: #ccc; /* Adjust the color as needed */
     text-decoration: none; /* Remove default underline */
     position: relative;
+    line-height: 1.5;
   }
   
   #writings a::after {
